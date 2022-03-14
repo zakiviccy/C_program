@@ -107,7 +107,7 @@ int main(int argc, char *argv[]) {
                 cout << "読み込み完了" << endl;
                 break;
             case 'w':                   //wの後ろに書き込むファイル名を入力
-                printf("次にデータを書き込みたい県を漢字で入力してください（すべてのデータが見たい場合は all と入力）:");
+                printf("次にファイルにデータを書き込みたい県を漢字で入力してください（すべてのデータが見たい場合は all と入力）:");
                 cin >> buffer;
                 filename2 = optarg;
                 saveList(filename2, buffer);  
