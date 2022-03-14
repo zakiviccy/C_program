@@ -6,10 +6,14 @@
 #include <fstream>
 #include <ios>     
 #include <iomanip> 
+#include <stdlib.h>
 
 using namespace std;
 
 /* 感染データを格納する構造体の定義 */
+#ifndef __PARSE_H__
+#define __PARSE_H__
+
 class infection{
 public:
   int year;
@@ -24,6 +28,5 @@ public:
   void print_infection(class infection *inf);
   void print_save_infection(class infection *inf, FILE *fp);
 };
-
 
 #endif
