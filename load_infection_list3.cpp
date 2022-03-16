@@ -43,7 +43,7 @@ void readFile(char filename[]) {
     /*入力されたアルファベットによってソートの仕方を変える*/
 
     cout <<"まずはソートの順番を選んでください"<<endl; 
-    cout <<"a:日付昇順    b:日付降順    c:入院患者数昇順    d:入院患者数降順      :";
+    cout <<"a:日付昇順    b:日付降順    c:入院患者数昇順    d:入院患者数降順    e:退院者昇順　　f:退院者降順  :";
 
     char c;
     cin >> c;
@@ -67,6 +67,12 @@ void readFile(char filename[]) {
       }
       else if(c=='d'){   //dが入力された場合、入院患者数降順にソート
 	  insert_infection_list(&root, inf, HospitalizationDescend);
+      }
+      else if(c=='e'){   //eが入力された場合、退院者数昇順にソート
+	  insert_infection_list(&root, inf, DischargeAscend);
+      }
+      else if(c=='f'){   //eが入力された場合、退院者数昇順にソート
+	  insert_infection_list(&root, inf, DischargeDescend);
       }
       
       else{
