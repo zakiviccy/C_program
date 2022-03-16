@@ -15,6 +15,10 @@ int HospitalizationAscend(class infection *p, class infection *q);
 
 int HospitalizationDescend(class infection *p, class infection *q);
 
+int DischargeAscend(class infection *p, class infection *q);
+
+int DischargeDescend(class infection *p, class infection *q);
+
 void insert_infection_list(class infection_list** ptr, class infection newdata, int (*comp)(class infection*, class infection*));
 
 void print_infection_list(class infection_list* ptr, char* prefecturename);
