@@ -26,6 +26,16 @@ int HospitalizationDescend(class infection *p, class infection *q){
   return (q->hospital > p->hospital);
 }
 
+/*退院者数の前後を判定する関数(昇順)*/
+int DischargeAscend(class infection *p, class infection *q){
+  return (p->discharge > q->discharge);
+}
+
+/*退院者数の前後を判定する関数(降順)*/
+int DischargeDescend(class infection *p, class infection *q){
+  return (q->discharge > p->discharge);
+}
+
 /*リストの途中にcompの順番に従ってデータを挿入する*/
 void insert_infection_list(class infection_list** ptr, class infection newdata,int (*comp)(class infection*, class infection*)){
   if(*ptr==NULL || (*comp)(&((*ptr)->data), &newdata)>0){
