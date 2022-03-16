@@ -19,12 +19,7 @@ void infection::str2infection(char str[],class infection *inf) {
     str = NULL;  /* 2回目以降は第1引数にヌルポインタを指定する; strtok()の仕様 */
   }
   
-  /* 各tokenに何が入ったかを確認! */
-  /*
-    for (j=0; j < i; j++) {
-      printf("%02d: %s\n", j, token[j]);
-    }
-  */
+  
   
   /* 分割した要素から、各データを取り出して格納 */
   inf->year   = atoi(token[0]);                // 0: 年
