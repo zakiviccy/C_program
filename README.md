@@ -11,7 +11,7 @@ load_infection_list3.cppでは新たにファイルにリストを書き込む�
 コンパイル方法  
 g++ -c parse3.cpp  
 g++ -c infection_list3.cpp  
-g++ -p load load_infection_list3.cpp parse3.o infection_list3.o  
+g++ -o load load_infection_list3.cpp parse3.o infection_list3.o  
 
 実行方法  
 ./load -f ○○.csv -w ○○.txt -v  
